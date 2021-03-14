@@ -43,7 +43,7 @@ class SMTPConnection:
             exit(1)
         else:
             try:
-                logger.info('Starting TLS session...')
+                logger.info('Iniciando sessão TLS...')
                 self.server.starttls()
             except RuntimeError:
                 logger.error('SSL/TLS support is not available to your Python interpreter.')
@@ -93,10 +93,10 @@ class SMTPConnection:
 
     def send_mail(self, message):
         try:
-            logger.info('Sending spoofed message...')
+            logger.info('Enviando email phishing...')
             self.server.sendmail(self.sender, self.recipients, message.as_string())
-            logger.success('Message sent!')
+            logger.success('phishing entregue!')
         except smtplib.SMTPException:
-            logger.error('Unable to send message. Check sender, recipients and message body')
+            logger.error('Incapaz de enviar mensagem. Verifique o remetente, os destinatários e o corpo da mensagem')
             logger.error(traceback.format_exc())
             exit(1)
