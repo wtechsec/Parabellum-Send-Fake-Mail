@@ -16,7 +16,7 @@ pip install colorama
 
 ## uso
 
-1. git clone https://github.com/wtechsec/Parabellum-port-scanner.git
+1. git clone https://github.com/wtechsec/Parabellum-Send-Fake-Mail.git
 2. sudo python3 Parabellum-Fake-Mail.py wizard
 3. SMTP host: smtp.example.com
 4. SMTP port: 587 ou um porta de sua escolha
