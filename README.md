@@ -40,5 +40,7 @@ pip install colorama
 21. enviando email de phishing...
 
 
-
+# By wtechsec
+# https://wtechsec.webnode.pt
+# https://www.instagram.com/wtechsec/
 
